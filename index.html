@@ -1,0 +1,48 @@
+<?php	session_start();
+?>
+<html>
+    <head>
+        <title>Home</title>
+        <link type="text/css" rel="stylesheet" href="hom.css">
+    </head>
+    <body>
+       <div class="header">
+        <div class="dropdown">
+  
+<button class="dropbtn">College</button>
+  <div class="dropdown-content">
+    <a href="ciitr.php">IIT ROORKEE</a>
+    <a href="ciitb.php">IIT BOMBAY</a>
+    <a href="home.php">Others</a>
+  </div>
+</div>
+
+        
+        <div class="dropdown">
+  <button class="dropbtn">Books</button>
+  <div class="dropdown-content">
+    <a href="#">BOOK 1</a>
+    <a href="#">BOOK 2</a>
+    <a href="#">Others</a>
+  </div>
+</div>
+            
+        <div class="dropdown">
+  <button class="dropbtn">Companies</button>
+  <div class="dropdown-content">
+    <a href="#">FACEBOOK</a>
+    <a href="#">GOOGLE</a>
+    <a href="#">Others</a>
+  </div>
+</div>
+        </div>
+ <h1>Go and Search for your dreams</h1>
+        <h3>Colleges and Companies</h3>
+        <div class="d">
+            <form method ="post" action="lgck.php">
+                <input type="text" placeholder="Enter College name" name="sname" class="in">
+            <input type="text" placeholder="Enter Branch" class="in">
+            <button type="submit" name="Search" class="bt">Show</button>
+            </form>  
+        </div>
+</html>
